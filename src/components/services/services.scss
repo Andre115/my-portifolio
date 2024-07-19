@@ -1,0 +1,32 @@
+
+
+.services_container{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    background-color: red;
+    z-index: 2;
+
+    background-image: url(../../../public/imagens/bg005.jpg);
+    height: 100vh;
+    padding-top: 4.5rem;
+    width: 100%;
+    z-index: 1;
+    background-attachment: fixed;
+
+    .bg{
+            
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8rem;
+        background-color: hsla(0, 0%, 0%, 0.3);
+        background: linear-gradient(120deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+        height: calc(100% + 4rem );
+        transform: translateY(-4rem);
+
+        h3{
+            
+        }
+    }
+}

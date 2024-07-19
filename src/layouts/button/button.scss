@@ -1,0 +1,44 @@
+@import "../../../public/Styles/Styles.scss";
+
+.button_container{
+    button{
+        width: auto;
+        padding: .5rem 1rem;
+        font-size: .85;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: 1px solid var(--main-first-color);
+        background-color: #1a1a1a;
+        color: var(--white);
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+        transition: .5s;
+        
+        @include mobile{
+            padding: .35rem .65rem;
+            font-weight: 600;
+        }
+
+
+        &:hover{
+            color: var(--main-secundary-color);
+            background-color: var(--main-first-color);
+            box-shadow: 0 1px 10px var(--main-first-color);
+            transform: translateY(-3px);
+        }
+    }
+
+    
+    button.bg_secundary{
+        background-color: var(--main-secundary-color) !important;
+        color: #1a1a1a;
+
+        &:hover{
+            color: var(--main-secundary-color);
+            background-color: transparent !important;
+            box-shadow: 0 1px 10px var(--main-first-color);
+            transform: translateY(-3px);
+        }
+    }
+}

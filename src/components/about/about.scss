@@ -1,0 +1,235 @@
+@import "../../../public/Styles/Styles.scss";
+
+
+.about_container{
+    background-image: url(../../../public/imagens/bg008.jpg);
+    height: calc(100vh - 4rem );
+    width: 100vw;
+    top: 4rem;
+    
+    
+
+    .bg{
+        width: 100%;
+        height: 100%;
+        background-color: #111111e3;
+        
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 8rem;
+        gap: 1rem;
+        
+        @include tablet{
+            padding: 0 4rem;
+        }
+        
+        @include tablet_small{
+            padding: 0 2rem;
+            
+        }
+        
+        @include mobile{
+            flex-direction: column;         
+            padding: 0 1rem;
+        }
+        
+        @include mobile_small{
+            padding: 0;
+            gap: 0;
+        }
+        
+        .left_section{
+            width: 40%;
+            display: flex;
+            justify-content: end;
+            
+
+            
+            .area_img{
+                width: 220px;
+                height: 220px;
+                position: relative;
+                box-shadow: 0 0 5px var(--main-secundary-color);
+                transition: 1s all;
+
+                @include tablet{
+                    width: 200px;
+                    height: 200px;
+                }
+
+                @include tablet_small{
+                    width: 180px;
+                    height: 180px;
+                }
+                
+                @include mobile{
+                    display: none;
+                    
+                    width: 160px;
+                    height: 160px;
+                }
+                
+                &:hover{
+                    
+                    box-shadow: 0 0 15px var(--main-first-color);
+                }
+
+                &::after, &::before{
+                    content: '';
+                    width: 70%;
+                    height: 50%;
+                    position: absolute;
+
+                }
+
+                &::after{
+                   
+                    border-top: 4px solid orange;
+                    border-left: 4px solid orange;
+                    left: -10px;
+                    top: -10px;
+                }
+
+                &::before{
+                    border-bottom: 4px solid orange;
+                    border-right: 4px solid orange;
+                    right: -10px;
+                    bottom: -10px;
+                }
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+
+            }
+            
+        }
+
+        .right_section{
+            width: 60%;
+            padding-left: 2rem;
+            
+            @include mobile{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                
+                
+            }
+                @include mobile_small{
+                    padding: 0.5rem 1rem;
+                    height: 100%;
+                }
+        
+
+            .descrition{
+                display: flex;
+                flex-direction: column;
+                gap: .75rem;
+                margin-top: .5rem;
+                position: relative;
+
+                @include mobile{
+                    align-items: center;    
+                }
+
+                p{
+                    line-height: 1.35rem;
+
+                    @include tablet_small{
+                        font-size: .875rem;
+                    }
+
+                    @include mobile_small{
+                        font-size: .8rem;
+                    }
+                }
+
+                .list{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 1rem;
+                    
+                    @include mobile{
+                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    @include mobile_small{
+                        margin: .5rem 0;
+                        
+                    }
+                    
+                    ul:first-child{
+                        width: 200px; 
+                        
+                        @include mobile{
+                            margin-left: 10%;
+                            width: 50%;
+                        } 
+                        
+                        li{
+                            @include mobile_small{
+                                margin-left: 2.5%;
+                                font-size: .8rem;
+                            }
+                        }
+                    }
+                    
+                    ul:last-child{
+                        @include mobile{
+                            margin-right: 10%;
+                            width: 50%;
+
+                            li{
+                                @include mobile_small{
+                                    margin-left: 2.5%;
+                                    font-size: .8rem;
+                                }
+                            }
+                            
+                        }
+                    }
+
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        width: 100%;
+                        
+
+                        li{
+                            font-size: .85rem;
+                            color: #c9c9c9;
+                            display: flex;
+                            justify-content: start;
+
+                            
+                    }
+
+                    }
+
+                }
+            }
+
+            .btn_area{
+                display: flex;
+                gap: 1rem;
+                margin-top: 2rem;
+            }
+
+
+        }
+
+    }
+
+}

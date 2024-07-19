@@ -1,0 +1,49 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .75s;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  color: var(--white);
+  width: 100vw;
+  overflow-x: hidden;
+  
+}
+
+:root {
+  --primary-btn-blue: #044bf1;
+  --secondary-btn-blue: #0584f2;
+  --tercery-btn-blue: #0aaff1;
+  
+  --background-black: #000202;
+  --secundary-black: #292828;
+  
+  
+  --main-first-color: #19d3d7;
+  --main-secundary-color: #f2a104;
+  --white: #fff;
+  
+}
+
+a{
+  transition: .5s;
+  text-decoration: none;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+input{
+  outline: none;
+  border: none;
+}
+
+.citacao{
+  font-family: "playball" sans-serif !important;
+
+}
