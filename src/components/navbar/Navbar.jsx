@@ -14,10 +14,12 @@ function Navbar() {
 
   return (
     <header className='header_container'>
+      
       <div className="logo">Y<span className="letter-b">B</span> <span className='point'></span></div>
+
       <nav className='nav-retrat'>
         <ul>
-          <li>
+          <li className='active'>
             <a href="#">Home</a>
           </li>
           <li>
@@ -33,7 +35,7 @@ function Navbar() {
             <a href="#">Projects</a>
           </li>
           <li>
-            <a href="#">Testemun</a>
+            <a href="#">Testimonial</a>
           </li>
           <li>
             <a href="#">Contact</a>
@@ -42,7 +44,7 @@ function Navbar() {
       </nav>
 
       {!showIcon ? (
-        <div className='teste' onClick={alterBtnIcon}><MenuIcon /></div>
+        <div className='nav_out' onClick={alterBtnIcon}><MenuIcon /></div>
 
       ):(   
         <div>
@@ -50,7 +52,7 @@ function Navbar() {
         <div onClick={alterBtnIcon}><CloseIcon/></div>
         <nav className='nav-mobile'>
         <ul>
-            <li>
+            <li className='active'>
               <a href="#">Home</a>
             </li>
             <li>
@@ -66,7 +68,7 @@ function Navbar() {
               <a href="#">Projects</a>
             </li>
             <li>
-              <a href="#">Testemun</a>
+              <a href="#">Testimonial</a>
             </li>
             <li>
               <a href="#">Contact</a>

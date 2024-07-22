@@ -51,6 +51,7 @@
             gap: 1rem;
 
             li{
+                padding: .25rem .15rem;
 
                 a{
                     font-size: .8rem;
@@ -68,7 +69,7 @@
         }
     }
 
-    svg, .teste{
+    svg, .nav_out{
         display: none;
     }
     
@@ -86,7 +87,7 @@
 @media(max-width: 812px){
     .header_container{
 
-        .teste{
+        .nav_out{
             display: flex;
         }
 
@@ -150,11 +151,16 @@
                 li:hover{
      
                     border-bottom: 1px solid var(--main-secundary-color);
-
-
                 }
-            }
-            
+            }           
         }
+    }
+}
+
+.active{
+    border-bottom: 2px solid var(--main-secundary-color);
+    border-radius: .2rem;
+    a{
+        color: var(--main-secundary-color) !important;   
     }
 }

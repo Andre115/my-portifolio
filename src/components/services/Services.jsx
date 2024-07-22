@@ -1,5 +1,5 @@
 import "./services.scss"
-import Card from "../../layouts/card/Card"
+import Card from "../../layouts/cards/CardServices"
 /*IMG imports*/
 import math01 from "../../../public/imagens/matematic001.jpg"
 import math02 from "../../../public/imagens/matematic002.jpg"

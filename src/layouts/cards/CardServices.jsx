@@ -1,9 +1,9 @@
-import "./card.scss"
+import "./cardServices.scss"
 
 function Card({img, logo, title, descricao}) {
   return (
 
-    <div className="card_container">
+    <div className="cardServices_container">
         <img src={img} alt="" />
         <div className="bgcard">
             
